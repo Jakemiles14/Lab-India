@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" >
+	<head>
+		<title>Lab Hotel</title>
+	</head>
+	<body>
+		<h1>UNA Renters Insurance</h1>
+		<form action="http://www.example.com/review.php" method="get">
+			<fieldset>
+				<!-- details section with guided text -->
+				<legend>Your Details:</legend>
+				<label>Name: </label>
+        <input type="name" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="John Doe">
+        <br />
+        <label>Password: </label>
+        <input type="password" class="form-control" id="exampleInputPassword" aria-describedby="passwordHelp" placeholder="Must be 8 characters">
+        <br />
+				<label>Email: </label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email@email.com">
+        <br />
+        <label>Phone: </label> 
+        <input type="phonenumber" class="form-control" id="exampleInputPhone" placeholder="123-456-7890">
+        <br />
+        <label>SSN: </label>
+        <input type="SSN" class="form-control" id="exampleInputSSN" placeholder="__-__-____">
+        <br />
+			</fieldset><br />
+			<fieldset>
+				<legend>Your Review:</legend>
+				<!-- review section with dropdown button and checkbox -->
+				<p>
+					<label for="hear-about">How did you hear about us?</label>
+					<select name="referrer" id="hear-about">
+            <option value="select">Select</option>
+						<option value="google">Google</option>
+						<option value="friend">Friend</option>
+						<option value="advert">Advertising</option>
+						<option value="other">Other</option>
+					</select>
+				</p>
+				<p>
+					Were you pleased with your visit?<br />
+					<label><input type="radio" name="rating" value="yes" /> Yes</label>
+					<label><input type="radio" name="rating" value="no" /> No</label>
+					<label><input type="radio" name="rating" value="maybe" /> Eh</label>
+				</p>
+				<label><input type="checkbox" name="subscribe" unchecked="unchecked" /> Sign me up for email updates</label><br />
+				<input type="submit" value="Submit" /> <input type="reset">
+			</fieldset>
+		</form>
+	</body>
+</html>
